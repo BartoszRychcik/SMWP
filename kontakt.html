@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8" />
+    <title>Szkolne Mistrzostwa W Programowaniu</title>
+    <meta name="description" content="Witam Cię internauto. Interesujesz się programowaniem? Szukasz rozwiązań zadań z naszego konkursu? To miejsce doskonałe dla Ciebie, Zapraszamy!" />
+    <meta name="keywords" content="SMWP,konkurs,programowanie,C++" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Bartosz Rychcik" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="licznik.js"></script>
+    <script type="text/javascript" src="dancing.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+            <img class="banner_" src="obrazki/cropped-naglowek.png" alt="Cppsite.blog.pl" />
+        </div>
+        
+        <div id="menu_gorne">
+            <ul>
+                <li class="wyliczeniemenu"><a href="home.html">Home</a></li>
+                <li class="wyliczeniemenu"><a href="kontakt.html">Kontakt</a></li>
+                <li class="wyliczeniemenu"><a href="polecane.html">Polecane strony</a></li>
+                <li class="wyliczeniemenu"><a href="regulamin.html">Regulamin</a>
+		        <li class="wyliczeniemenu"><a href="statystyka.html">Statystyka</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>Kontakt</h1>
+            <p>W przypadku wystąpienia jakichkolwiek problemów prosimy o kontakt mailowy:</p>
+            <a class="link" href="mailto:wyimaginowany1997@gmail.com"><b>∎ e-mail to Bartosz Rychcik</b></a><br />
+            <a class="link" href="mailto:kapseleczekk@gmail.com"><b>∎ e-mail to Kacper Nowakowski</b></a><br />
+            <a class="link" href="mailto:jeicamikswobarg@gmail.com"><b>∎ e-mail to Maciej Grabowski</b></a><br />
+            <br /><br />
+            <p>
+                Dla usprawnienia systemu odpowiedzi dla zapytań dotyczących poszczególnych zadań prosimy o adresowanie wiadomości do osoby odpowiedzialnej za jego realizację.
+                Informacje dotyczące twórcy znajdują się poniżej treści zadania w linijce "Dodane przez:"
+            </p>
+            <img id="informacja" class="przycisk" src="obrazki/info-sign.svg" alt="info" />
+        
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            <a href="https://www.facebook.com/bartosz.rychcik.3" target="_blank">
+                <svg  class="svg-anim" width="120" height="120" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" 
+                 xml:space="preserve">
+                <g id="obiekt">
+                   <path d="M90,15.001C90,7.119,82.884,0,75,0H15C7.116,0,0,7.119,0,15.001v59.998
+                           C0,82.881,7.116,90,15.001,90H45V56H34V41h11v-5.844C45,25.077,52.568,16,61.875,16H74v15H61.875C60.548,31,59,32.611,59,35.024V41
+                           h15v15H59v34h16c7.884,0,15-7.119,15-15.001V15.001z">
+
+                       <animate attributeName="stroke" attributeType="auto" begin="0s" dur="10s" from="#0a039f" to="red" repeatCount="indefinite"/>
+                       <animate attributeName="stroke-width" attributeType="auto" begin="0s" dur="10s" from="0" to="5" repeatCount="indefinite" />
+                       <animate attributeName="fill" attributeType="auto" values="#0a039f;black;yellow;green;red" begin="0" dur="10s" repeatCount="indefinite" /> 
+                   </path>
+                </g>
+                </svg>
+            </a>
+            <hr />
+            <h2>Ankieta</h2>
+            <p>Zapraszamy do wypełnienia ankiety. Dziękujemy!</p>
+            <br />
+            <br />
+            <form name="formularz" action="mailto:wyimaginowany1997@gmail.com" method="post">
+                <p class="pyt">Imię:</p> <input id="name" name="imie" class="info" title="Wpisz swoje imie" type="text" /><span class="komunikat"></span><br/>
+                <p class="pyt">Nazwa Użytkownika:</p><input name="nazwa" class="info" title="Wpisz swoją nazwę użytkownika" type="text" /><span class="komunikat"></span><br /><br />
+                <p class="pyt">Płeć:</p><br />
+                
+                    
+                    <label for="radio-1">Mężczyzna</label>
+                    <input type="radio" name="radio-1" id="radio-1">
+                    <label for="radio-2">Kobieta</label>
+                    <input type="radio" name="radio-1" id="radio-2">
+                    <label for="radio-3">Inna</label>
+                    <input type="radio" name="radio-1" id="radio-3">
+                <br /><br />
+                
+                <p class="pyt">Czy brałeś/aś udział w konkursie SMWP?</p>
+                <select>
+                    <option>Tak</option>
+                    <option>Nie</option>
+                </select><br /><br />
+                <p class="pyt">Jak podobały Ci się zadania konkursowe?</p>
+                <select>
+                    <option>Wcale mi się nie podobały</option>
+                    <option>Trochę mi się podobały</option>
+                    <option>Bardzo mi się podobały</option>
+                </select><br /><br />
+                <p class="pyt">Ile zadań zdołałeś/aś zrobić?</p>
+                <select>
+                    <option>mniej niż 3</option>
+                    <option>od 3 do 6</option>
+                    <option>od 7 do 11</option>
+                    <option>od 12 do 15</option>
+                    <option>więcej niż 15</option>
+                </select><br /><br />
+                <p class="pyt">W jakich językach programujesz?</p><br />
+                <input type="checkbox" name="jez" />AWK<br />
+                <input type="checkbox" name="jez" />BASH<br />
+                <input type="checkbox" name="jez" />C#<br />
+                <input type="checkbox" name="jez" />C/C++<br />
+                <input type="checkbox" name="jez" />HASK<br />
+                <input type="checkbox" name="jez" />JAVA<br />
+                <input type="checkbox" name="jez" />PAS<br />
+                <br/>
+                <p class="pyt">Uwagi:</p><br />
+                <textarea class="info" title="W tym miejscu możesz wpisać uwagi dot. konkursu">Tekst...</textarea>
+                <br /><br />
+                <button class="info" title="Resetuj" type="reset"><img class="przycisk" src="obrazki/back-arrow.svg" alt="reset" /></button>
+                <button onclick="zapisz()" class="info" title="Wyślij" type="submit"><img class="przycisk" src="obrazki/approve-invoice.svg" alt="submit" /></button>
+            </form>
+            <div id="licznik_klikniec"></div>
+            
+        </div>
+        <div id="menu_boczne">
+            <ul>
+                <li class="wyliczeniemenu">
+                    <a>Wybierz Zadanie</a>
+                    <ul>
+                        <li class="wyliczeniemenu"><a href="respekt.htm">Respekt</a></li>
+                        <li class="wyliczeniemenu"><a href="diament.htm">Diament Bez Skazy</a></li>
+                        <li class="wyliczeniemenu"><a href="metro.htm">Metro</a></li>
+                        <li class="wyliczeniemenu"><a href="dzien.htm">Dzień Dziecka</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="stopka">
+            Szkolne Mistrzostwa W Programowaniu &copy; Wszelkie prawa zastrzeżone<br />
+            <a href="#container">wróć do początku strony</a>
+        </div>
+    </div>
+</body>
+</html>

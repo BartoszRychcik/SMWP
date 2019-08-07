@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8" />
+    <title>Szkolne Mistrzostwa W Programowaniu</title>
+    <meta name="description" content="Witam Cię internauto. Interesujesz się programowaniem? Szukasz rozwiązań zadań z naszego konkursu? To miejsce doskonałe dla Ciebie, Zapraszamy!" />
+    <meta name="keywords" content="SMWP,konkurs,programowanie,C++" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Bartosz Rychcik" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dancing.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+            <img class="banner_" src="obrazki/cropped-naglowek.png" alt="Cppsite.blog.pl" />
+        </div>
+        <div id="menu_gorne">
+            <ul>
+                <li class="wyliczeniemenu"><a href="home.html">Home</a></li>
+                <li class="wyliczeniemenu"><a href="kontakt.html">Kontakt</a></li>
+                <li class="wyliczeniemenu"><a href="polecane.html">Polecane strony</a></li>
+                <li class="wyliczeniemenu"><a href="regulamin.html">Regulamin</a>
+		<li class="wyliczeniemenu"><a href="statystyka.html">Statystyka</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>[SMWP_105] Respekt</h1>
+            <p>
+            <b>Link do zadania:</b><br/><a class="link" href="http://www.spoj.com/SMWP/problems/SMWP_105/" target="_blank"><b>http://www.spoj.com/SMWP/problems/SMWP_105/</b></a>
+               <br/><br/>
+            <b>Opis problemu:</b>
+               Jaś planuje dołączyć do grona najlepszych graczy. Warunkiem dołączenia do grupy jest pokonanie kilku losowych graczy. Jaś próbuje określić swoje szanse poprzez sprawdzenie ilu graczy posiada więcej krążków niż on. 
+               Wówczas liczba ta odzwierciedla listę osób z którymi Jaś będzie miał większe problemy podczas rozgrywek. Naszym zadaniem jest policzenie liczby osób, które mają więcej krążków niż Jaś.
+               <br /><br />
+            <b>Rozwiązanie:</b>
+               Naiwnie możemy dla każdego zapytania sprawdzać każdorazowo wejściowy ciąg danych i zliczać ile wartości jest większych od danej liczby pokemonów Jasia. Jednakże spotka to się z komunikatem "TLE". 
+               Co więc możemy zrobić, aby przyśpieszyć czas przeszukiwania ciągu? Możemy go posortować w czasie logarytmicznym, a następnie przeszukać, lecz nie wyraz po wyrazie, a metodą dziel i zwyciężaj. 
+               Dzięki temu znacznie zmniejszymy ilość porównywanych elementów. Stosujemy tutaj algorytm przeszukiwania binarnego przekształconego na wyszukiwanie ostatniego elementu zbioru o danej wartości.
+               Funkcja zwraca nam ostatnią pozycję, na której występuje liczba równa liczbie krążków Jasia. Tym samym wiemy, że wartości "na prawo" od tej liczby są większe. Naszą odpowiedzią jest wówczas liczba wszystkich graczy minus jeden, 
+               ponieważ elementy w tablicy liczymy od 0, odjąć pozycja wskazana przez funkcję.
+               <br /><br />
+            <b>Rozwiązanie sprytne:</b>
+               Jeszcze łatwiej możemy to zadanie rozwiązać używając zamiast przeszukiwania binarnego gotowej funkcji upper_bound(first,last,valuable), która działa w identyczny sposób wyznaczając nam ostatni element zbioru o danej wartości.
+               <br /><br />
+            <b>Uwaga!</b> 
+               Samo zastosowanie przeszukiwania binarnego na posortowanym ciągu a następnie iterowanie do momentu napotkania większej wartości spotka się również z komunikatem "TLE".
+            </p>
+        </div>
+        <div id="menu_boczne">
+            <ul>
+                <li class="wyliczeniemenu">
+                    <a>Wybierz Zadanie</a>
+                    <ul>
+                        <li class="wyliczeniemenu"><a href="respekt.htm">Respekt</a></li>
+                        <li class="wyliczeniemenu"><a href="diament.htm">Diament Bez Skazy</a></li>
+                        <li class="wyliczeniemenu"><a href="metro.htm">Metro</a></li>
+                        <li class="wyliczeniemenu"><a href="dzien.htm">Dzień Dziecka</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="stopka">
+            Szkolne Mistrzostwa W Programowaniu &copy; Wszelkie prawa zastrzeżone<br />
+            <a href="#container">wróć do początku strony</a>
+        </div>
+    </div>
+</body>
+</html>

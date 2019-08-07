@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8" />
+    <title>Szkolne Mistrzostwa W Programowaniu</title>
+    <meta name="description" content="Witam Cię internauto. Interesujesz się programowaniem? Szukasz rozwiązań zadań z naszego konkursu? To miejsce doskonałe dla Ciebie, Zapraszamy!" />
+    <meta name="keywords" content="SMWP,konkurs,programowanie,C++" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Bartosz Rychcik" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dancing.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+            <img class="banner_" src="obrazki/cropped-naglowek.png" alt="Cppsite.blog.pl" />
+        </div>
+        <div id="menu_gorne">
+            <ul>
+                <li class="wyliczeniemenu"><a href="home.html">Home</a></li>
+                <li class="wyliczeniemenu"><a href="kontakt.html">Kontakt</a></li>
+                <li class="wyliczeniemenu"><a href="polecane.html">Polecane strony</a></li>
+                <li class="wyliczeniemenu"><a href="regulamin.html">Regulamin</a>
+		<li class="wyliczeniemenu"><a href="statystyka.html">Statystyka</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>[SMWP_106] Diament Bez Skazy</h1>
+            <p>
+                <b>Link do zadania:</b><br /><a class="link" href="http://www.spoj.com/SMWP/problems/SMWP_106/" target="_blank"><b>http://www.spoj.com/SMWP/problems/SMWP_106/</b></a>
+                <br /><br />
+                <b>Opis problemu:</b>
+                Musisz pomóc Jasiowi sprawdzić czy podany diament jest warty zakupu. Wartym określamy go wtedy, gdy konstrukcja przyjmijmy dla ułatwienia fizyczna diamentu jest grafem pełnym, a więc takim, 
+                który zawiera każde możliwe połączenie z innym wierzchołkiem. Zakładając, że graf jest spójny, a relacje są różne i wzajemne tak naprawdę musimy tylko sprawdzić, czy dana liczba połączeń może być konstrukcją grafu pełnego. 
+                Jeśli może wypisujemy "TAK", gdy na pewno nie może wypisujemy "NIE".
+                <br /><br />
+                <b>Rozwiązanie:</b>
+                Aby rozwiązać ten problem musimy najpierw zastanowić się jaka ilość połączeń może występować w grafie pełnym. Odpowiedz brzmi: n(n-1)/2, dla n będącego liczbą wierzchołków grafu.
+                Teraz pozostaje nam jedynie utworzyć odpowiednie równanie: n(n-1)/2=K, gdzie K jest liczbą połączeń podaną w zapytaniu. Jeśli podane równanie posiada takie n naturalne, 
+                dla którego równanie jest prawdziwe wówczas istnieje taki graf pełny o n wierzchołkach i K połączeniach. W bardzo łatwy sposób możemy to także sprawdzić korzystając z obserwacji Diofantosa.
+                Mianowicie jeśli sqrt(K*8+1) jest liczbą wymierną to  wtedy z danej liczby połączeń różnych i wzajemnych możemy zbudować graf pełny. Warto również zauważyć, że kolejne liczby będące ilością połączeń w grafach pełnych o n 
+                wierzchołkach są tak naprawdę kolejnymi liczbami trójkątnymi, gdzie grafpełny(n)=trójkatne(n-1).
+                <br /><br />
+            </p>
+        </div>
+        <div id="menu_boczne">
+            <ul>
+                <li class="wyliczeniemenu">
+                    <a>Wybierz Zadanie</a>
+                    <ul>
+                        <li class="wyliczeniemenu"><a href="respekt.htm">Respekt</a></li>
+                        <li class="wyliczeniemenu"><a href="diament.htm">Diament Bez Skazy</a></li>
+                        <li class="wyliczeniemenu"><a href="metro.htm">Metro</a></li>
+                        <li class="wyliczeniemenu"><a href="dzien.htm">Dzień Dziecka</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="stopka">
+            Szkolne Mistrzostwa W Programowaniu &copy; Wszelkie prawa zastrzeżone<br />
+            <a href="#container">wróć do początku strony</a>
+        </div>
+    </div>
+</body>
+</html>

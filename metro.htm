@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8" />
+    <title>Szkolne Mistrzostwa W Programowaniu</title>
+    <meta name="description" content="Witam Cię internauto. Interesujesz się programowaniem? Szukasz rozwiązań zadań z naszego konkursu? To miejsce doskonałe dla Ciebie, Zapraszamy!" />
+    <meta name="keywords" content="SMWP,konkurs,programowanie,C++" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Bartosz Rychcik" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="dancing.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+            <img class="banner_" src="obrazki/cropped-naglowek.png" alt="Cppsite.blog.pl" />
+        </div>
+        <div id="menu_gorne">
+            <ul>
+                <li class="wyliczeniemenu"><a href="home.html">Home</a></li>
+                <li class="wyliczeniemenu"><a href="kontakt.html">Kontakt</a></li>
+                <li class="wyliczeniemenu"><a href="polecane.html">Polecane strony</a></li>
+                <li class="wyliczeniemenu"><a href="regulamin.html">Regulamin</a>
+		<li class="wyliczeniemenu"><a href="statystyka.html">Statystyka</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h1>[SMWP_108] Metro</h1>
+            <p>
+                <b>Link do zadania:</b><br /><a class="link" href="http://www.spoj.com/SMWP/problems/SMWP_108/" target="_blank"><b>http://www.spoj.com/SMWP/problems/SMWP_108/</b></a>
+                <br /><br />
+                <b>Opis problemu:</b>
+                W zadaniu stajemy się na moment odpowiedzialni za porządek panujący na stacji metra. Musimy sprawdzać każdą nową osobę i umieszczać ją na odpowiednim miejscu w kolejce oczekujących na pociąg metra. 
+                Można uznać, że to trochę niesprawiedliwe, aby sortować ludzi według ich hierarchii w państwie, jednakże nie po to dziś tutaj jesteśmy. My musimy rozwiązać problem algorytmiczny, a mianowicie wykonać taki program,
+                który wyręczy nas w liczeniu tych wszystkich ludzi i sprawdzaniu ich priorytetów. 
+                <br /><br />
+                <b>Rozwiązanie:</b>
+                Jedną z podpowiedzi jest tutaj słowo kolejka. Jak widać interesuje nas tylko ilość elementów i jeden z nich ten aktualnie największy. Możemy wszystkie priorytety umieszczać w kolejce priorytetowej, 
+                a następnie w zależności od zapytania wypisywać kolejka.top() lub kolejka.size(). Jedyne na co musimy uważać, to aby nie wydać polecenia top() przy pustej kolejce, wówczas wypisujemy 0 co widnieje w treści zadania.
+                <br /><br />
+            </p>
+        </div>
+        <div id="menu_boczne">
+            <ul>
+                <li class="wyliczeniemenu">
+                    <a>Wybierz Zadanie</a>
+                    <ul>
+                        <li class="wyliczeniemenu"><a href="respekt.htm">Respekt</a></li>
+                        <li class="wyliczeniemenu"><a href="diament.htm">Diament Bez Skazy</a></li>
+			<li class="wyliczeniemenu"><a href="metro.htm">Metro</a></li>
+                        <li class="wyliczeniemenu"><a href="dzien.htm">Dzień Dziecka</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="stopka">
+            Szkolne Mistrzostwa W Programowaniu &copy; Wszelkie prawa zastrzeżone<br />
+            <a href="#container">wróć do początku strony</a>
+        </div>
+    </div>
+</body>
+</html>
